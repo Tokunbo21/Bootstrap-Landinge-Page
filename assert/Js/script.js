@@ -1,24 +1,11 @@
-/*
-Case Sensitive= reconhece letras maiusculas e minusculas
 
-por tag: getElementByTagName()
-por id: getElementById()
-por nome: getElementsByNome()
-por classe: getElementsByClass()
-por seletor: querySelector()
-*/ 
+let nome = window.document.getElementsByName('Nome')
+let email = document.querySelector('email')
+let senha = document.querySelector('Senha')
+let nomeOk = false
+let emailOk = false
+let senhaOk = false
 
-let nome = window.document.getElementById('Nome')
-let email = document.querySelector('#Email')
-let assunto = document.querySelector('#Assunto')
-let nomeOk=false
-let emailOk=false
-let assuntoOk=false
-let mapa = document.querySelector('#mapa')
-
-nome.style.width = '100%'
-email.style.width= '100%'
-assunto.style.width = '100%'
 
 function validaNome(){
     let txtNome= document.querySelector('#txtNome')
@@ -44,13 +31,13 @@ function validaEmail() {
         txtEmail.style.color= 'green'
         emailOk= true
     }
-
+senhaOk
 }
 
-function validaAssunto (){
-   let txtAssunto = document.querySelector('#txtAssunto')
-   if(assunto.value.length >=100){
-       txtAssunto.innerHTML = 'Por favor escreva um texto de no máximo 100 caracteres'
+function validaSenha (){
+   let txtAssunto = document.querySelector('#txtSenha')
+   if(assunto.value.length < 2){
+       txtAssunto.innerHTML = 'Por favor escreva um texto de no minimo 2 caracteres'
        txtAssunto.style.color= 'red'
        txtAssunto.style.display = 'block'
    }else {
@@ -66,14 +53,3 @@ function enviar (){
         alert('Preenchar o formulario corretamente antes de enviar')
     }
 } 
-
-function mapaZoom(){
-     mapa.style.width = '600px'
-     mapa.style.height = '400px'
-}
-
-function mapaNormal(){
-    mapa.style.width = '400px'
-    mapa.style.height = '250px'
-
-}

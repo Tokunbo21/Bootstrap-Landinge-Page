@@ -1,0 +1,11 @@
+/* .carousel-inner */
+
+.carousel-inner > .carousel-item > img {
+  
+  width: 500px;
+  height:500px;
+
+  }
+  #corpo{
+    background-color:chocolate;
+  }
