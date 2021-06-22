@@ -1,106 +1,331 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
-    <!--Link para pegar o estilo CSS dos servidores do Brootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+        .tm-social {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./assert/css/styles.css">
+
+
+    <style>
+
+    </style>
+    <title>Olá, mundo!</title>
 </head>
-<body>
+
+<body id='corpo'>
     <!--Menu-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-        <a class="navbar-brand" href="index.html">Tokunbo T.</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger mb-1 ">
+        <a class="navbar-brand" href="index.html">Tokunbo Africa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-light" href="#">Home <span class="sr-only">(página atual)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Contato</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Cadastro
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Faça o seu Cadastro</a>
-                <a class="dropdown-item" href="#">Login</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Fale com nosco</a>
-              </div>
-            </li>
-       
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
-          </form>
-        </div>
-      </nav>
-       <!--/Menu-->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="#saiba"> Saiba mais<span class="sr-only">(página
+                            atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#Video">Videos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cadastro
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#login">Login</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#sobre">Sobre nos</a>
+                    </div>
+                </li>
 
-       <!--Grid-->
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+    <!--/Menu-->
+
+    <!--Carrosel-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100"
+                    src="https://i0.wp.com/ethicalmarketingnews.com/wp-content/uploads/2018/05/myafrica.jpg?resize=700%2C400"
+                    alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                    src="https://afcham-china.org/wp-content/uploads/2019/03/Screen-Shot-2019-03-08-at-2.22.30-PM-700x400.png"
+                    alt="Segundo Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                    src="https://rotasdeviagem.com.br/wp-content/uploads/2020/11/leao-animais-savana-africana.jpg"
+                    alt="Terceiro Slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+    <!--Carrosel-->
+
+    <!--Jumbotron-->
+    <div id='saiba' class="jumbotron jumbotron-fluid">
         <div class="container">
+            <h1 class="display-4">Sobre o Site</h1>
+            <p class="lead">Nesse site você ira conhecer um poucoda comunidde africana.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur amet, quasi nobis quibusdam
+                voluptas omnis molestiae necessitatibus voluptatum odio, repudiandae velit facilis nostrum impedit.
+                Perspiciatis, provident cupiditate! Sed, accusamus qui.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error omnis explicabo doloremque optio dolorem
+                architecto dignissimos dolores! Iste officiis blanditiis, non quo facilis dolore culpa totam minima
+                ducimus voluptas suscipit.
+            </p>
+        </div>
+    </div>
+    <!--Jumbotron-->
 
-            <div class="row mt-5 d-flex justify-content-center">
-                <div class="col-md-1 p-0">
-                    <div class="bg-warning">1 coluna</div>
+    <div class="container">
+        <!--Cards-->
+        <div class="card-columns">
+            <div class="card">
+                <img class="card-img-top"
+                    src="https://img.myloview.com.br/fotomurais/paises-e-capitais-da-africa-400-2344251.jpg"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title"> Africa</h5>
+                    <p class="card-text">A África é o terceiro continente mais extenso (depois da Ásia e da América) com
+                        cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3% da área total da terra firme do
+                        planeta. É o segundo continente mais populoso da Terra (atrás da Ásia) com cerca de um bilhão de
+                        pessoas (estimativa para 2005[1]), representando cerca de um sétimo da população mundial, e 54
+                        países independentes. Tem se transformado na ultima década em uma continente cada vez mais
+                        católico.[2]</p>
                 </div>
-
-                <div class="col-md-1 p-0">
-                    <div class="bg-info ">2 coluna</div>
+            </div>
+            <div class="card">
+                <img class="card-img-top"
+                    src="https://static.vecteezy.com/ti/vetor-gratis/t1/664743-paisagem-africana-do-savana-gr%C3%A1tis-vetor.jpg"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title"> Savana</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quaerat esse aut
+                        soluta culpa error doloremque illum vel fuga consequatur, voluptatibus, magni architecto tempora
+                        laborum facilis, labore officiis maxime sequi!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maiores qui rem fuga quaerat
+                        soluta expedita mollitia tempore minima accusamus harum, officia quasi, iure, veniam quos fugiat
+                        aliquid vero aperiam?
+                    </p>
                 </div>
-
-                <div class="col-md-1 p-0">
-                    <div class="bg-danger">3 coluna</div>
-                </div>
-
-                <div class="col-md-1 p-0">
-                    <div class="bg-primary">4 coluna</div>
-                </div>
-
-                <div class="col-md-1 p-0">
-                    <div class="bg-success">5 coluna</div>
-                </div>
-
             </div>
 
-            <div class="row mt-5 d-flex justify-content-center">
-                <div class="col-md-4">
-                    <div class="bg-warning">4 coluna</div>
+            <div class="card">
+                <img class="card-img-top"
+                    src="https://www.clipartmax.com/png/small/433-4339142_nigeria-flag-bandeira-da-nigeria-png.png"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Nigeria</h5>
+                    <p class="card-text">A Nigéria, oficialmente República Federal da Nigéria (em inglês: Federal
+                        Republic of Nigeria), é uma república constitucional federal que compreende 36 estados e o
+                        Território da Capital Federal. O país está localizado na África Ocidental e compartilha
+                        fronteiras terrestres com a República do Benim a oeste; com Chade e Camarões a leste e com o
+                        Níger ao norte. Sua costa encontra-se ao sul, no Golfo da Guiné, no Oceano Atlântico.</p>
+                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
                 </div>
-
-                <div class="col-md-4">
-                    <div class="bg-info ">4 coluna</div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="bg-danger">4 coluna</div>
-                </div>
-
-
             </div>
+            <div class="card bg-danger text-white text-center p-3">
+                <blockquote class="blockquote mb-0">
+                    <p>“Nós temos um desejo mais profundo, um anseio por um mundo melhor.
+                        E por causa disto, temos uma vontade verdadeira de fazer melhor.”</p>
+                    <footer class="blockquote-footer">
+                        <small>
+                            'Sombo – Zâmbia' <cite title="Título da fonte"></cite>
+                        </small>
+                    </footer>
+                </blockquote>
+            </div>
+
+            <div class="card">
+                <img class="card-img"
+                    src="https://fastly.4sqi.net/img/general/200x200/31099942_GsDq9y8ertxSwcaAajTBg26KkFgPfk7-N28XA0lCY7c.jpg"
+                    alt="Imagem do card">
+                <h5 class="card-title">Cidade Africana</h5>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla numquam a unde tenetur quia, sit eum
+                    quibusdam ullam doloremque, assumenda voluptatum ipsam neque possimus quisquam odit quo veritatis
+                    necessitatibus aliquid.
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+    <!--Cards-->
+
+    <!--Texto e Imagen-->
+
+    <div class="row mt-5 mb-5 text-center">
+        <div class="col-md-6">
+            <h2 id="sobre">Sobre nos</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, dignissimos enim iusto id
+                animi placeat quisquam eius reiciendis dolor soluta aspernatur. Error dolores nihil illum quia,
+                amet cum necessitatibus dolor.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsam omnis ullam dicta
+                aliquam! In asperiores molestias officia fuga iusto. Enim molestiae ad assumenda possimus nobis
+                similique, velit explicabo quidem!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et itaque aspernatur aliquid id
+                asperiores soluta perspiciatis tenetur accusamus eveniet similique sit excepturi delectus incidunt ullam
+                eius, magnam ratione perferendis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quidem odit voluptatum quos optio,
+                quas in aspernatur quia sunt, at inventore quisquam sapiente dolores soluta debitis quod ullam
+                distinctio reprehenderit!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni hic commodi sapiente illum
+                aspernatur sint nobis fugit eaque porro nulla animi facilis, nostrum quos atque tempora.
+                Dignissimos molestias atque Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque est
+                beatae ad in rerum vitae a, dolore numquam, quisquam odit magni, officia dolores quod laboriosam
+                dignissimos hic aut perspiciatis modi.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem similique velit inventore
+                maiores? Perferendis nisi laboriosam tempore aperiam, consequuntur tempora accusantium officia itaque
+                impedit incidunt quia, repellendus quae eaque ipsum!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam molestias iusto rem veniam minima,
+                asperiores, ab tenetur quisquam quod nostrum nam in facilis deserunt, velit aliquam repellendus! Quod,
+                cupiditate iusto.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ducimus voluptas corrupti necessitatibus
+                obcaecati nisi qui neque. Eos neque alias at, totam voluptatum asperiores error? Ad consequuntur
+                possimus nobis qui.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo numquam, odio, fugit
+                repellat, obcaecati provident assumenda quae ea animi aliquid autem laboriosam debitis excepturi
+                consectetur suscipit perferendis quis in.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis voluptas eligendi itaque dolorem
+                placeat ducimus aut porro, corrupti architecto iure aliquam sit labore fugiat commodi atque voluptate
+                cumque, adipisci quam?
+            </p>
+        </div>
+        <div>
+            <img width="670"
+                src="https://ikewana.com/wordpress19/wp-content/uploads/2019/07/itinerary-african-dream-featured-600x700-20190715-001-600x700.jpg"
+                alt="People">
+        </div>
+    </div>
+    <!--Texto e Imagen-->
+
+    <!--Video-->
+    <h3 id="Video" class="text-center">Videos</h3>
+    <div class="row mt-5 mb-3 text-center">
+
+        <div class="col-md-4 mt-3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MSZjyDFqVrs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
 
-      <!--/Grid-->
+        <div class="col mt-3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PCa8RxaOPW8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+    </div>
+    <!--/Video-->
+    <!--Login-->
+    <h3 id='login' class="text-center"> Login</h3>
+    <div class="text-center">
+        <div class="container form-group col-md-6">
+            <form>
+
+                <label class="msg" for="Nome">Nome</label>
+                <input type="text" class="form-control" id="txtNome" onkeyup="validaNome()" placeholder="Nome">
+                
+
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="txtEmail" onkeyup="validaEmail()" placeholder="Email">
+
+                <label for="inputAddress">Senha</label>
+                <input type="password" class="form-control" id="txtSenha" onkeyup="validaSenha()"
+                    placeholder="Senha">
 
 
+                <button type="submit" class="btn btn-primary mt-3" onclick="enviar ()">Entrar</button>
 
+            </form>
+        </div>
+        <!--/Login-->
 
+        <!--footer-->
+        <hr>
+        <footer>
+            <div class="row mb-3 d-flex justify-content-center">
+                <div class="col-mb-12 ">
 
+                    <a href="https://m.facebook.com/" target="_blank" class="p-3">
+                        <img class="tm-social " src="assert/Img/facebook.png" alt="Logo do Facebook">
+                    </a>
+                    <a href="https://br.linkedin.com/" target="_blank" class="p-3">
+                        <img class="tm-social " src="assert/Img/linkedin.png" alt="Logo do linkedin">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="p-3">
+                        <img class="tm-social " src="assert/Img/instagram.png" alt="Logo do instagram">
+                    </a>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-mb-12">
+                    <p>
+                        Tokunbo O. J. Tofade &copy
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!--footer-->
 
+        <script src="assert/Js/script.js"></script>
 
-
-  <!--Scripts necessário para utilização dos codigos Js do Bootstrap -->
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- JavaScript (Opcional) -->
+        <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
 </body>
+
 </html>
