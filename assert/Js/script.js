@@ -1,7 +1,7 @@
 
-let nome = window.document.getElementsByName('Nome')
-let email = document.querySelector('email')
-let senha = document.querySelector('Senha')
+let nome = window.document.getElementById('txtNome')
+let email = document.querySelector('#txtEmail')
+let senha = document.querySelector('#txtSenha')
 let nomeOk = false
 let emailOk = false
 let senhaOk = false
@@ -34,20 +34,23 @@ function validaEmail() {
 senhaOk
 }
 
-function validaSenha (){
-   let txtAssunto = document.querySelector('#txtSenha')
-   if(assunto.value.length < 2){
-       txtAssunto.innerHTML = 'Por favor escreva um texto de no minimo 2 caracteres'
-       txtAssunto.style.color= 'red'
-       txtAssunto.style.display = 'block'
+function validaSenha(){
+   let txtSenha = document.querySelector('#txtSenha')
+   if(senha.value.length < 2){
+       txtSenha.innerHTML = 'Por favor escreva um texto de no minimo 2 caracteres'
+       txtSenha.style.color= 'red'
+       txtSenha.style.display = 'block'
    }else {
-    txtAssunto.style.display = 'none'
-    assuntoOk= true
+    txtSenha.style.color= 'green'
+    senhaOk= true
    }
 }
 
-function enviar (){
-    if (nomeOk == true && emailOk == true && assuntoOk == true){
+function enviar(){
+    console.log(nomeOk)
+    console.log(emailOk)
+    console.log(senhaOk)
+    if (nomeOk == true && emailOk == true && senhaOk == true){
         alert('Formulario enviado com sucesso!')
     }else {
         alert('Preenchar o formulario corretamente antes de enviar')
